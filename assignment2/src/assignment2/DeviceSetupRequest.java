@@ -1,3 +1,4 @@
+package assignment2;
 public class DeviceSetupRequest extends AbstractSupportRequest {
     private final int deviceCount;
 

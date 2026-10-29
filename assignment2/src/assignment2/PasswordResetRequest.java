@@ -1,3 +1,4 @@
+package assignment2;
 public class PasswordResetRequest extends AbstractSupportRequest {
     private final String accountName;
 

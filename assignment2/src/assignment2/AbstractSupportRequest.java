@@ -1,3 +1,4 @@
+package assignment2;
 public abstract class AbstractSupportRequest implements SupportRequest {
     private final int id;
     private final String title;

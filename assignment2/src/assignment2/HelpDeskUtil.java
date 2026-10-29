@@ -14,6 +14,4 @@ public class HelpDeskUtil {
 	public static int sumPoints(List<? extends Technician> technicians) {
 		
 	}
-	
-	
 }
