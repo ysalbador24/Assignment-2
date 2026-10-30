@@ -37,7 +37,6 @@ public class Main {
 		PasswordResetRequest passRequest2 = new PasswordResetRequest(302, "Reset Mark's password", 25, "mark3");
 		
 		// add requests to help desk
-		
 		helpDesk.addRequest(deviceRequest1);
 		helpDesk.addRequest(deviceRequest2);
 		helpDesk.addRequest(netRequest1);
@@ -69,12 +68,13 @@ public class Main {
 		listTechnicians.add(tech1);
 		listTechnicians.add(tech3);
 		listTechnicians.add(tech4);
+		
 		System.out.println("Total points accross technicians: " + HelpDeskUtil.sumPoints(listTechnicians) + " points");
 		HelpDeskUtil.printAll(listTechnicians);
 		
 		
 		// Testing
-		//helpDesk.addRequest(deviceRequest1); // Testing: adding same request twice
+		helpDesk.addRequest(deviceRequest1); // Testing: adding same request twice
 		//helpDesk.assignRequest(tech1, 101); // Testing: assigning the same request to the same technician, not allowed
 		//helpDesk.assignRequest(tech3, 101); // Testing: assigning the same request to another technician, not allowed
 		//helpDesk.resolveRequest(tech3, 301); // Testing: resolving a request twice is not allowed
